@@ -425,9 +425,11 @@ We'll be running our application in Passenger, which is a Rack appserver that ac
 for nginx, a high-performance, evented webserver which is quickly catching up to Apache as
 the number one Linux webserver and is the goto webserver for Rails deployments and admins.
 
-We then need to install the `sqlite3` gem:
+We then need to install the `pg` gem:
 
-    server> sudo gem install sqlite3 sinatra
+sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev libpq-dev libcurl4-openssl-dev 
+
+    server> sudo gem install pg sinatra
 
 To install Passenger, first we install the gem:
 
