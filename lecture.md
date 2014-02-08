@@ -59,7 +59,7 @@ this, it can lead to competition when accessing these resources.
 
 For example, on a single piece of hardware with 4 virtual machines, if they all try to read
 from different parts of the disk at th same time, that can lead to something known as read
-contention. A harddrive is made up of spinning platters with an arm on it that seeks to 
+contention. A harddrive is made up of spinning platters with an arm on it that seeks to
 different positions to read and write data, so if it tries to read from different places
 on the disk at the same time, each concurrent read will slow down.
 
@@ -158,7 +158,7 @@ exactly how much memory, disk and CPU is available to it and also choose from a 
 Linux distributions, all using software, and without the need to physically install any hardware.
 
 DO offers pre-sized machines with common increments of CPU, RAM and Disk, which allows you to
-more easily choose your server. Other providers may have sliders to choose exactly how much 
+more easily choose your server. Other providers may have sliders to choose exactly how much
 CPU, RAM and Disk you have down to the MegaByte.
 
 For this class, we'll be creating our nodes with the following settings:
@@ -427,7 +427,7 @@ the number one Linux webserver and is the goto webserver for Rails deployments a
 
 We then need to install the `pg` gem:
 
-sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev libpq-dev libcurl4-openssl-dev 
+sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev libgdbm-dev ncurses-dev automake libtool bison subversion pkg-config libffi-dev libpq-dev libcurl4-openssl-dev
 
     server> sudo gem install pg sinatra
 
@@ -710,7 +710,7 @@ to install nginx with the Passenger module:
     Whichever you choose, if you already have an existing Nginx configuration file,
     then it will be preserved.
 
-    Enter your choice (1 or 2) or press Ctrl-C to abort: 
+    Enter your choice (1 or 2) or press Ctrl-C to abort:
 
 We will choose 1 since we don't need to do anything advanced. Type a '1' and press
 enter. Passenger will then download and unpack nginx and prompt you for a location
@@ -871,7 +871,6 @@ Now, if we type `nginx -h`, it will spit out the usage for the nginx command.
 
 To start nginx, run the following command:
 
-    server> sudo nginx
 
 It should immediately return you to your prompt. When you start nginx, it spawns a server
 process in the background so you can continue doing other things on the server. It will
